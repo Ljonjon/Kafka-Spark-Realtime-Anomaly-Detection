@@ -68,7 +68,7 @@ Executing raw .sh Linux scripts directly inside Windows triggers the unconfigure
 
 Once 	est.ps1 runs:
 1. Observe the live charts floating natively inside your launched browser stream (http://localhost:8501).
-2. Switch back to the newly executed terminal dedicated for producer.py. 
+2. Switch back to the newly executed `Kafka Producer` terminal dedicated for producer.py. 
 3. **Press ''Enter''** on your keyboard.
 4. The terminal confirms the deployment via [ATTACK] Injected 500 burst events.
 5. Check your Dashboard—an abnormal visual peak will violently spike above the threshold line rendering the application background aggressively indicating real-time identification.
