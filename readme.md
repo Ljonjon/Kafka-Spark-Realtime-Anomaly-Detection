@@ -4,7 +4,7 @@ This project demonstrates a real-time network traffic anomaly detection system l
 
 ## 🏗️ Architecture & Workflow
 
-1. **Data Preprocessing**: Raw server logs (e.g., ccess_10000.log) are cleaned and standardized into structured JSON formats (data_preprocessed.jsonl) for efficient consumption.
+1. **Data Preprocessing**: Raw server logs (e.g., Access_10000.log) are cleaned and standardized into structured JSON formats (data_preprocessed.jsonl) for efficient consumption.
 2. **Kafka Ingestion (producer.py)**: Acts as the real-time event source. It continuously replays historical logs into the Kafka web-logs topic. Furthermore, it supports manual injections of burst traffic (e.g., 500 requests sharing an identical timestamp) to reliably simulate sudden DDoS attacks.
 3. **Stream Processing (spark_processor.py)**:
    - Subscribes to the live Kafka stream.
