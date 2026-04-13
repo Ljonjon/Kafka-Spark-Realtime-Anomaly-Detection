@@ -3,7 +3,8 @@
 This project demonstrates a real-time network traffic anomaly detection system leveraging PySpark Structured Streaming, Apache Kafka, and Streamlit. The pipeline ingests continuous web logs, computes traffic via sliding windows with watermarks, and triggers low-latency front-end alerts against DDoS-like burst access.
 
 ## 🏗️ Architecture & Workflow
-
+![Global_System_Architecture_202604032354](https://github.com/user-attachments/assets/474507e5-73ab-4a40-b05f-3618825e8e92)
+![Global_System_Architecture_202604032355](https://github.com/user-attachments/assets/90088e21-02ac-474a-82b5-e6ce0eba9669)
 1. **Data Preprocessing**: Raw server logs (e.g., Access_10000.log) are cleaned and standardized into structured JSON formats (data_preprocessed.jsonl) for efficient consumption.
 2. **Kafka Ingestion (producer.py)**: Acts as the real-time event source. It continuously replays historical logs into the Kafka web-logs topic. Furthermore, it supports manual injections of burst traffic (e.g., 500 requests sharing an identical timestamp) to reliably simulate sudden DDoS attacks.
 3. **Stream Processing (spark_processor.py)**:
